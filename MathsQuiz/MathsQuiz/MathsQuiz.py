@@ -1,5 +1,4 @@
 import random
-usrName = input("What is your name? ")
 score = loop = 0
 while loop < 10:
     n1 = random.randint(1, 10)
@@ -19,8 +18,6 @@ while loop < 10:
         except ValueError:  continue
         else:    break
     if int(usrAns) == ans:
-        print("Correct!")
         score += 1
-    else:   print("Incorrect!")
     loop += 1
 print("Well done, " + usrName + " you got a score of " + str(score) + "/10.")
