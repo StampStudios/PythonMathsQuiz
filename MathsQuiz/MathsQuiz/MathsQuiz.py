@@ -3,8 +3,8 @@ usrName = input("What is your name? ")
 score = 0
 loop = 0
 while loop < 10:
-    num1 = random.randint(1, 10)
-    num2 = random.randint(1, 10)
+    n1 = random.randint(1, 10)
+    n2 = random.randint(1, 10)
     op_int = random.randint(1, 3)
     if op_int == 1:
         ans = num1 + num2
