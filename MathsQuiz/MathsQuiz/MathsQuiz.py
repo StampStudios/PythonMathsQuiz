@@ -20,8 +20,7 @@ while loop < 10:
         except ValueError:
             print("That is not a valid answer")
             continue
-        else:
-            break
+        else:    break
     if int(usrAns) == ans:
         print("Correct!")
         score += 1
