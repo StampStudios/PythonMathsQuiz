@@ -1,7 +1,7 @@
 import random
 score = loop = 0
 while loop < 10:
-    n1 = random.randint(1, 10)
+    n1 = random.randint(1, 10)  
     n2 = random.randint(1, 10)
     op_int = random.randint(1, 3)
     if op_int == 1:
