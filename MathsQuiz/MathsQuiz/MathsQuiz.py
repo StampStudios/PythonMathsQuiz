@@ -15,8 +15,7 @@ while loop < 10:
         ans = n1 * n2
         op = " x "
     while True:
-        try:
-            usrAns = int(input(str(n1) + op + str(n2) + " = "))
+        try:    usrAns = int(input(str(n1) + op + str(n2) + " = "))
         except ValueError:
             print("That is not a valid answer")
             continue
@@ -24,7 +23,6 @@ while loop < 10:
     if int(usrAns) == ans:
         print("Correct!")
         score += 1
-    else:
-        print("Incorrect!")
+    else:   print("Incorrect!")
     loop += 1
 print("Well done, " + usrName + " you got a score of " + str(score) + "/10.")
