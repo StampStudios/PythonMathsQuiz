@@ -17,7 +17,6 @@ while loop < 10:
         try:    usrAns = int(input(str(n1) + op + str(n2) + " = "))
         except ValueError:  continue
         else:    break
-    if int(usrAns) == ans:
-        score += 1
+    if int(usrAns) == ans:  score += 1
     loop += 1
 print("Well done you got a score of " + str(score) + "/10.")
