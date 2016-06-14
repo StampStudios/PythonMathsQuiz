@@ -16,8 +16,7 @@ while loop < 10:
         op = " x "
     while True:
         try:    usrAns = int(input(str(n1) + op + str(n2) + " = "))
-        except ValueError:
-            continue
+        except ValueError:  continue
         else:    break
     if int(usrAns) == ans:
         print("Correct!")
