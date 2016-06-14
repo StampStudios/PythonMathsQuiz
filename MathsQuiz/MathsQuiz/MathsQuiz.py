@@ -25,6 +25,6 @@ while loop < 10:
         print("Correct!")
         score += 1
     else:
-            print("Incorrect!")
+        print("Incorrect!")
     loop += 1
 print("Well done, " + usrName + " you got a score of " + str(score) + "/10.")
