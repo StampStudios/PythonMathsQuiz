@@ -1,6 +1,10 @@
-import random, sqlite3
+import random, sqlite3, os
 name = input("What is your name? ").title()
 score = loop = 0
+if os.path.isfile("t2db.db"):   con = sqlite3.connect("t2db.db")
+else:
+    con = sqlite3.connect("t2db.db")
+    for i in range(1, 4):   con.execute("CREATE TABLE class%s (ID INTEGER PRIMARY KEY, NAME TEXT, SCORE INTEGER);" %i)
 while loop < 10:
     n1 = random.randint(1, 10)  
     n2 = random.randint(1, 10)
