@@ -5,6 +5,7 @@ if os.path.isfile("t2db.db"):   con = sqlite3.connect("t2db.db")
 else:
     con = sqlite3.connect("t2db.db")
     for i in range(1, 4):   con.execute("CREATE TABLE class%s (ID INTEGER PRIMARY KEY, NAME TEXT, SCORE INTEGER);" %i)
+cur = con.cursor()
 while loop < 10:
     n1 = random.randint(1, 10)  
     n2 = random.randint(1, 10)
@@ -22,3 +23,5 @@ while loop < 10:
     if int(usrAns) == ans:  score += 1
     loop += 1
 print("Well done you got a score of " + str(score) + "/10.")
+table = "class%s" %s_class
+with con:   cur.execute("INSERT INTO " + table + "(NAME, SCORE) VALUES (?, ?);", (name, score))
