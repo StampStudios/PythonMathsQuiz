@@ -1,4 +1,4 @@
-import random
+import random, sqlite3
 score = loop = 0
 while loop < 10:
     n1 = random.randint(1, 10)  
