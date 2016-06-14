@@ -1,25 +1,23 @@
 import random
-
-input("What is your name? ")
+usrName = input("What is your name? ")
 score = 0
 loop = 0
 while loop < 10:
-    n1 = random.randint(1, 10)
-    n2 = random.randint(1, 10)
-    x1 = random.randint(1, 3)
-    if x1 == 1:
-        ans = n1 + n2
+    num1 = random.randint(1, 10)
+    num2 = random.randint(1, 10)
+    op_int = random.randint(1, 3)
+    if op_int == 1:
+        ans = num1 + num2
         op = " + "
-    elif x1 == 2:
-        ans = n1 - n2
+    elif op_int == 2:
+        ans = num1 - num2
         op = " - "
     else:
-        ans = n1 * n2
+        ans = num1 * num2
         op = " x "
-
     while True:
         try:
-            usrAns = int(input(str(n1) + op + str(n2) + " = "))
+            usrAns = int(input(str(num1) + op + str(num2) + " = "))
         except ValueError:
             print("That is not a valid answer")
             continue
