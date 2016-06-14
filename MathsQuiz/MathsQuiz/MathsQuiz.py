@@ -16,3 +16,12 @@ while loop < 10:
     else:
         ans = n1 * n2
         op = " x "
+
+    while True:
+        try:
+            usrAns = int(input(str(n1) + op + str(n2) + " = "))
+        except ValueError:
+            print("That is not a valid answer")
+            continue
+        else:
+            breaks
