@@ -1,4 +1,5 @@
 import random, sqlite3
+name = input("What is your name? ").title()
 score = loop = 0
 while loop < 10:
     n1 = random.randint(1, 10)  
