@@ -24,4 +24,13 @@ while loop < 10:
             print("That is not a valid answer")
             continue
         else:
-            breaks
+            break
+
+        if int(usrAns) == ans:
+            print("Correct!")
+            score += 1
+        else:
+            print("Incorrect!")
+        loop += 1
+
+        print("Well done, " + name + " you got a score of " + str(score) + "/10.")
