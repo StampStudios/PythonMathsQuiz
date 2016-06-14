@@ -22,12 +22,10 @@ while loop < 10:
             continue
         else:
             break
-
     if int(usrAns) == ans:
         print("Correct!")
         score += 1
     else:
             print("Incorrect!")
     loop += 1
-
 print("Well done, " + usrName + " you got a score of " + str(score) + "/10.")
