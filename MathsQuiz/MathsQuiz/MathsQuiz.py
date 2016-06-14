@@ -20,4 +20,4 @@ while loop < 10:
     if int(usrAns) == ans:
         score += 1
     loop += 1
-print("Well done, " + usrName + " you got a score of " + str(score) + "/10.")
+print("Well done you got a score of " + str(score) + "/10.")
