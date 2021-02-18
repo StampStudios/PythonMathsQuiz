@@ -1,6 +1,6 @@
 import random, sqlite3, os
 name = input("What is your name? ").title()
-score = loop = 0
+score = 0
 if os.path.isfile("t2db.db"):   con = sqlite3.connect("t2db.db")
 else:
     con = sqlite3.connect("t2db.db")
